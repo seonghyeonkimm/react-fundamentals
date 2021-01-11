@@ -1,5 +1,5 @@
 // Rendering Lists
-// http://localhost:3000/isolated/final/07.js
+// http://localhost:3000/isolated/exercise/07.js
 
 import * as React from 'react'
 
@@ -31,6 +31,7 @@ function App() {
       </button>
       <ul style={{listStyle: 'none', paddingLeft: 0}}>
         {items.map(item => (
+          // 🐨 add a key prop to the <li> below. Set it to item.id
           <li key={item.id}>
             <button onClick={() => removeItem(item)}>remove</button>{' '}
             <label htmlFor={`${item.id}-input`}>{item.value}</label>{' '}
